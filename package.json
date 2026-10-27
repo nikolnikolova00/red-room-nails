@@ -40,18 +40,21 @@
   "devDependencies": {
     "@types/react": "~19.3.0",
     "babel-plugin-styled-components": "^2.3.1",
+    "cross-env": "^10.1.0",
     "eslint": "^9.39.5",
     "eslint-config-expo": "~58.0.4",
     "typescript": "~6.0.3"
   },
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "start": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo start",
+    "start:tunnel": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo start --tunnel",
+    "login": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo login",
+    "android": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo start --android",
+    "ios": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo start --ios",
+    "web": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo start --web",
     "lint": "expo lint",
     "typecheck": "tsc --noEmit",
-    "doctor": "expo-doctor"
+    "doctor": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo-doctor"
   },
   "private": true
 }

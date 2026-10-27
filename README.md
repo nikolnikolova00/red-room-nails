@@ -5,7 +5,7 @@ Appointment and client manager for a nail studio. Built with Expo SDK 58, React 
 ## Requirements
 
 - Node.js 22+
-- Expo Go on an iPhone (login required)
+- Expo Go on an iPhone, signed in to an Expo account
 - A Firebase project for cloud backup (Phase 5)
 
 ## Setup
@@ -13,18 +13,40 @@ Appointment and client manager for a nail studio. Built with Expo SDK 58, React 
 ```bash
 npm install
 cp .env.example .env
-npx expo start
+npm run login
+npm run start:tunnel
 ```
 
+Log in once with `npm run login` (same account as Expo Go), then scan the QR code with Expo Go.
+
 Fill `.env` with the Firebase web app config values. The app runs without them; sign-in and sync stay disabled until they are set.
+
+## Corporate network
+
+This machine is behind a firewall that blocks inbound connections and TLS 1.3 from Node. Two consequences:
+
+- LAN mode (`npm start`) will hang on "Opening project" because the phone cannot reach the PC.
+- Expo's API, login and tunnel fail until Node is forced to TLS 1.2.
+
+The npm scripts already set `NODE_OPTIONS=--tls-max-v1.2`. Always use the scripts (or set that variable yourself) when running Expo commands. Use `npm run start:tunnel`, not `npm start`, on this network.
+
+If a command still hangs, run it through the scripts or prefix it:
+
+```powershell
+$env:NODE_OPTIONS="--tls-max-v1.2"
+npx expo <command>
+```
 
 ## Scripts
 
 ```bash
-npx expo start        # dev server
-npx expo lint         # ESLint
-npx tsc --noEmit      # typecheck
-npx expo-doctor       # dependency and config checks
+npm run login         # Expo account login (browser)
+npm run start:tunnel  # dev server over an Expo tunnel (works behind the firewall)
+npm start             # dev server on the LAN (blocked on this network)
+npm run web           # run in the browser on the PC
+npm run lint          # ESLint
+npm run typecheck     # tsc --noEmit
+npm run doctor        # dependency and config checks
 ```
 
 ## Structure
