@@ -1,0 +1,50 @@
+{
+  "tabs": {
+    "today": "Today",
+    "calendar": "Calendar",
+    "clients": "Clients",
+    "settings": "Settings"
+  },
+  "common": {
+    "add": "Add",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "comingSoon": "Coming soon"
+  },
+  "today": {
+    "emptyTitle": "No appointments",
+    "emptyMessage": "Add your first appointment for today.",
+    "newAppointment": "New appointment"
+  },
+  "calendar": {
+    "emptyTitle": "Calendar is empty",
+    "emptyMessage": "Your monthly schedule will appear here."
+  },
+  "clients": {
+    "emptyTitle": "No clients yet",
+    "emptyMessage": "Add a client to keep appointments linked to them."
+  },
+  "settings": {
+    "language": "Language",
+    "bulgarian": "Български",
+    "english": "English",
+    "about": "About",
+    "version": "Version",
+    "account": "Account",
+    "backup": "Backup"
+  },
+  "appointment": {
+    "newTitle": "New appointment",
+    "editTitle": "Edit appointment"
+  },
+  "client": {
+    "newTitle": "New client",
+    "editTitle": "Edit client"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "Go back to the home screen.",
+    "goHome": "Go home"
+  }
+}

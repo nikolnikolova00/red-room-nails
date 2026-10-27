@@ -1,0 +1,50 @@
+{
+  "tabs": {
+    "today": "Днес",
+    "calendar": "Календар",
+    "clients": "Клиенти",
+    "settings": "Настройки"
+  },
+  "common": {
+    "add": "Добави",
+    "cancel": "Отказ",
+    "save": "Запази",
+    "close": "Затвори",
+    "comingSoon": "Очаквайте скоро"
+  },
+  "today": {
+    "emptyTitle": "Няма часове",
+    "emptyMessage": "Добавете първия си час за днес.",
+    "newAppointment": "Нов час"
+  },
+  "calendar": {
+    "emptyTitle": "Календарът е празен",
+    "emptyMessage": "Тук ще виждате месечния си график."
+  },
+  "clients": {
+    "emptyTitle": "Няма клиенти",
+    "emptyMessage": "Добавете клиент, за да запазвате часове към него."
+  },
+  "settings": {
+    "language": "Език",
+    "bulgarian": "Български",
+    "english": "English",
+    "about": "За приложението",
+    "version": "Версия",
+    "account": "Профил",
+    "backup": "Резервно копие"
+  },
+  "appointment": {
+    "newTitle": "Нов час",
+    "editTitle": "Редакция на час"
+  },
+  "client": {
+    "newTitle": "Нов клиент",
+    "editTitle": "Редакция на клиент"
+  },
+  "notFound": {
+    "title": "Страницата не е намерена",
+    "message": "Върнете се към началото.",
+    "goHome": "Към началото"
+  }
+}
