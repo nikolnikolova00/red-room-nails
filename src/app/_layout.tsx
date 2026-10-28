@@ -6,6 +6,8 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { useNotificationObserver } from '@/hooks/useNotificationObserver';
+import { configureNotifications } from '@/services/notifications';
 import { useSettingsStore } from '@/store/settings';
 import { theme } from '@/theme/theme';
 import { AppThemeProvider } from '@/theme/ThemeProvider';
@@ -38,6 +40,12 @@ export default function RootLayout() {
     void SplashScreen.hideAsync();
   }, []);
 
+  useEffect(() => {
+    void configureNotifications();
+  }, []);
+
+  useNotificationObserver();
+
   return (
     <AppThemeProvider>
       <NavigationThemeProvider value={navigationTheme}>
@@ -52,6 +60,30 @@ export default function RootLayout() {
           }}
         >
           <Stack.Screen name="(tabs)" />
+          <Stack.Screen
+            name="clients"
+            options={{ headerShown: true, title: t('tabs.clients') }}
+          />
+          <Stack.Screen
+            name="settings"
+            options={{ headerShown: true, title: t('tabs.settings') }}
+          />
+          <Stack.Screen
+            name="plan/new"
+            options={{ presentation: 'modal', headerShown: true, title: t('plans.newTitle') }}
+          />
+          <Stack.Screen
+            name="plan/[id]"
+            options={{ presentation: 'modal', headerShown: true, title: t('plans.editTitle') }}
+          />
+          <Stack.Screen
+            name="grocery/new"
+            options={{ presentation: 'modal', headerShown: true, title: t('groceries.newTitle') }}
+          />
+          <Stack.Screen
+            name="grocery/[id]"
+            options={{ presentation: 'modal', headerShown: true, title: t('groceries.editTitle') }}
+          />
           <Stack.Screen
             name="appointment/new"
             options={{ presentation: 'modal', headerShown: true, title: t('appointment.newTitle') }}

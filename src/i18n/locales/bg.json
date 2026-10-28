@@ -2,6 +2,9 @@
   "tabs": {
     "today": "Днес",
     "calendar": "Календар",
+    "plans": "Планове",
+    "groceries": "Пазар",
+    "more": "Още",
     "clients": "Клиенти",
     "settings": "Настройки"
   },
@@ -10,16 +13,45 @@
     "cancel": "Отказ",
     "save": "Запази",
     "close": "Затвори",
-    "comingSoon": "Очаквайте скоро"
+    "comingSoon": "Очаквайте скоро",
+    "delete": "Изтрий",
+    "edit": "Редакция",
+    "done": "Готово",
+    "all": "Всички",
+    "work": "Работа",
+    "personal": "Лично",
+    "optional": "По избор",
+    "notSet": "Не е зададено",
+    "clear": "Изчисти",
+    "deleteConfirmTitle": "Изтриване?",
+    "deleteConfirmMessage": "Това действие не може да бъде отменено.",
+    "back": "Назад"
   },
   "today": {
     "emptyTitle": "Няма часове",
     "emptyMessage": "Добавете първия си час за днес.",
-    "newAppointment": "Нов час"
+    "newAppointment": "Нов час",
+    "newPlan": "Нов план",
+    "plans": "Планове за днес",
+    "noPlans": "Няма планове за днес.",
+    "groceries": "Пазар",
+    "grocerySummary": "{{count}} продукта за купуване",
+    "groceryEmpty": "Списъкът с продукти е празен.",
+    "viewGroceries": "Отвори пазара",
+    "appointments": "Часове",
+    "appointmentsComingSoon": "Записването на часове очаквайте скоро."
   },
   "calendar": {
     "emptyTitle": "Календарът е празен",
-    "emptyMessage": "Тук ще виждате месечния си график."
+    "emptyMessage": "Тук ще виждате месечния си график.",
+    "filterAll": "Всички",
+    "filterWork": "Работа",
+    "filterPersonal": "Лично",
+    "noEntries": "Няма записи за този ден.",
+    "noWorkEntries": "Все още няма работни записи.",
+    "newPlan": "Нов план",
+    "previousMonth": "Предишен месец",
+    "nextMonth": "Следващ месец"
   },
   "clients": {
     "emptyTitle": "Няма клиенти",
@@ -46,5 +78,85 @@
     "title": "Страницата не е намерена",
     "message": "Върнете се към началото.",
     "goHome": "Към началото"
+  },
+  "plans": {
+    "title": "Планове",
+    "newTitle": "Нов план",
+    "editTitle": "Редакция на план",
+    "emptyTitle": "Няма планове",
+    "emptyMessage": "Добавете личен план или задача.",
+    "titleLabel": "Заглавие",
+    "titlePlaceholder": "Какво трябва да направите?",
+    "notesLabel": "Бележки",
+    "notesPlaceholder": "Допълнителни детайли",
+    "dateLabel": "Дата",
+    "timeLabel": "Час",
+    "categoryLabel": "Категория",
+    "reminderLabel": "Напомняне",
+    "reminderCaption": "Напомни ми 15 минути преди",
+    "reminderNeedsTime": "Добавете час, за да включите напомняне.",
+    "titleRequired": "Въведете заглавие.",
+    "dateRequired": "Изберете дата.",
+    "reminderNotificationTitle": "Напомняне за план",
+    "reminderNotificationBody": "{{title}} в {{time}}",
+    "channelName": "Напомняния за планове",
+    "deleteTitle": "Изтриване на план?",
+    "deleteMessage": "Планът ще бъде премахнат.",
+    "markDone": "Маркирай като готово",
+    "markNotDone": "Маркирай като незавършено",
+    "sections": {
+      "overdue": "Просрочени",
+      "today": "Днес",
+      "tomorrow": "Утре",
+      "week": "Тази седмица",
+      "later": "По-късно",
+      "done": "Готови"
+    },
+    "categories": {
+      "personal": "Лично",
+      "errand": "Задача",
+      "health": "Здраве",
+      "family": "Семейство",
+      "other": "Друго"
+    }
+  },
+  "groceries": {
+    "title": "Пазар",
+    "newTitle": "Нов продукт",
+    "editTitle": "Редакция на продукт",
+    "emptyTitle": "Списъкът е празен",
+    "emptyMessage": "Добавете продуктите, които трябва да купите.",
+    "nameLabel": "Продукт",
+    "namePlaceholder": "напр. Мляко",
+    "quantityLabel": "Количество",
+    "quantityPlaceholder": "напр. 2 бутилки",
+    "categoryLabel": "Категория",
+    "nameRequired": "Въведете име на продукт.",
+    "bought": "В кошницата",
+    "clearChecked": "Изчисти отметнатите",
+    "itemsToBuy": "{{count}} за купуване",
+    "allDone": "Всичко е отметнато.",
+    "deleteTitle": "Изтриване на продукт?",
+    "deleteMessage": "Продуктът ще бъде премахнат от списъка.",
+    "checkItem": "Маркирай {{name}} като купен",
+    "uncheckItem": "Маркирай {{name}} като некупен",
+    "categories": {
+      "produce": "Плодове и зеленчуци",
+      "dairy": "Млечни",
+      "meat": "Месо",
+      "bakery": "Хлебни",
+      "pantry": "Основни",
+      "frozen": "Замразени",
+      "household": "Домакински",
+      "other": "Друго"
+    }
+  },
+  "more": {
+    "title": "Още",
+    "manage": "Управление",
+    "clients": "Клиенти",
+    "clientsDescription": "Управлявайте клиентите и контактите си.",
+    "settings": "Настройки",
+    "settingsDescription": "Език и информация за приложението."
   }
 }

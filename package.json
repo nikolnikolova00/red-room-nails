@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "expo-router/entry",
   "dependencies": {
+    "@expo/vector-icons": "^15.0.2",
     "@hookform/resolvers": "^6.0.1",
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-native-community/datetimepicker": "9.2.1",
@@ -15,6 +16,7 @@
     "expo-haptics": "~58.0.7",
     "expo-linking": "~58.0.14",
     "expo-localization": "~58.0.5",
+    "expo-notifications": "~58.1.6",
     "expo-router": "~58.0.26",
     "expo-sharing": "~58.0.20",
     "expo-splash-screen": "~58.0.11",
@@ -52,7 +54,7 @@
     "android": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo start --android",
     "ios": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo start --ios",
     "web": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo start --web",
-    "lint": "expo lint",
+    "lint": "cross-env NODE_OPTIONS=--tls-max-v1.2 EXPO_OFFLINE=1 expo lint",
     "typecheck": "tsc --noEmit",
     "doctor": "cross-env NODE_OPTIONS=--tls-max-v1.2 expo-doctor"
   },

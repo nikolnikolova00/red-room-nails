@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { styled } from 'styled-components/native';
 
 import { AppText, Card, Screen } from '@/components/ui';
-import { useSettingsStore } from '@/store/settings';
 import type { Language } from '@/i18n';
+import { useSettingsStore } from '@/store/settings';
 
 const Content = styled.ScrollView`
   flex: 1;
@@ -60,11 +60,9 @@ export default function SettingsScreen() {
   const version = Constants.expoConfig?.version ?? '1.0.0';
 
   return (
-    <Screen>
+    <Screen edges={['left', 'right', 'bottom']}>
       <Content showsVerticalScrollIndicator={false}>
         <Body>
-          <AppText variant="title">{t('tabs.settings')}</AppText>
-
           <Card>
             <Section>
               <AppText variant="label">{t('settings.language')}</AppText>

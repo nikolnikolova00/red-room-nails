@@ -2,6 +2,9 @@
   "tabs": {
     "today": "Today",
     "calendar": "Calendar",
+    "plans": "Plans",
+    "groceries": "Groceries",
+    "more": "More",
     "clients": "Clients",
     "settings": "Settings"
   },
@@ -10,16 +13,45 @@
     "cancel": "Cancel",
     "save": "Save",
     "close": "Close",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "delete": "Delete",
+    "edit": "Edit",
+    "done": "Done",
+    "all": "All",
+    "work": "Work",
+    "personal": "Personal",
+    "optional": "Optional",
+    "notSet": "Not set",
+    "clear": "Clear",
+    "deleteConfirmTitle": "Delete item?",
+    "deleteConfirmMessage": "This action cannot be undone.",
+    "back": "Back"
   },
   "today": {
     "emptyTitle": "No appointments",
     "emptyMessage": "Add your first appointment for today.",
-    "newAppointment": "New appointment"
+    "newAppointment": "New appointment",
+    "newPlan": "New plan",
+    "plans": "Today's plans",
+    "noPlans": "No plans for today.",
+    "groceries": "Groceries",
+    "grocerySummary": "{{count}} items to buy",
+    "groceryEmpty": "Your grocery list is empty.",
+    "viewGroceries": "Open groceries",
+    "appointments": "Appointments",
+    "appointmentsComingSoon": "Appointment scheduling is coming soon."
   },
   "calendar": {
     "emptyTitle": "Calendar is empty",
-    "emptyMessage": "Your monthly schedule will appear here."
+    "emptyMessage": "Your monthly schedule will appear here.",
+    "filterAll": "All",
+    "filterWork": "Work",
+    "filterPersonal": "Personal",
+    "noEntries": "No entries for this day.",
+    "noWorkEntries": "No work entries yet.",
+    "newPlan": "New plan",
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month"
   },
   "clients": {
     "emptyTitle": "No clients yet",
@@ -46,5 +78,85 @@
     "title": "Page not found",
     "message": "Go back to the home screen.",
     "goHome": "Go home"
+  },
+  "plans": {
+    "title": "Plans",
+    "newTitle": "New plan",
+    "editTitle": "Edit plan",
+    "emptyTitle": "No plans yet",
+    "emptyMessage": "Add a personal plan or errand.",
+    "titleLabel": "Title",
+    "titlePlaceholder": "What do you need to do?",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Optional details",
+    "dateLabel": "Date",
+    "timeLabel": "Time",
+    "categoryLabel": "Category",
+    "reminderLabel": "Reminder",
+    "reminderCaption": "Notify me 15 minutes before",
+    "reminderNeedsTime": "Add a time to enable reminders.",
+    "titleRequired": "Enter a title.",
+    "dateRequired": "Choose a date.",
+    "reminderNotificationTitle": "Plan reminder",
+    "reminderNotificationBody": "{{title}} at {{time}}",
+    "channelName": "Plan reminders",
+    "deleteTitle": "Delete plan?",
+    "deleteMessage": "This plan will be removed.",
+    "markDone": "Mark as done",
+    "markNotDone": "Mark as not done",
+    "sections": {
+      "overdue": "Overdue",
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "week": "This week",
+      "later": "Later",
+      "done": "Done"
+    },
+    "categories": {
+      "personal": "Personal",
+      "errand": "Errand",
+      "health": "Health",
+      "family": "Family",
+      "other": "Other"
+    }
+  },
+  "groceries": {
+    "title": "Groceries",
+    "newTitle": "New grocery",
+    "editTitle": "Edit grocery",
+    "emptyTitle": "Your list is empty",
+    "emptyMessage": "Add items you need to buy.",
+    "nameLabel": "Item",
+    "namePlaceholder": "e.g. Milk",
+    "quantityLabel": "Quantity",
+    "quantityPlaceholder": "e.g. 2 bottles",
+    "categoryLabel": "Category",
+    "nameRequired": "Enter an item name.",
+    "bought": "In basket",
+    "clearChecked": "Clear checked",
+    "itemsToBuy": "{{count}} to buy",
+    "allDone": "Everything is checked off.",
+    "deleteTitle": "Delete item?",
+    "deleteMessage": "This item will be removed from the list.",
+    "checkItem": "Mark {{name}} as bought",
+    "uncheckItem": "Mark {{name}} as not bought",
+    "categories": {
+      "produce": "Produce",
+      "dairy": "Dairy",
+      "meat": "Meat",
+      "bakery": "Bakery",
+      "pantry": "Pantry",
+      "frozen": "Frozen",
+      "household": "Household",
+      "other": "Other"
+    }
+  },
+  "more": {
+    "title": "More",
+    "manage": "Manage",
+    "clients": "Clients",
+    "clientsDescription": "Manage your clients and contact details.",
+    "settings": "Settings",
+    "settingsDescription": "Language and app information."
   }
 }
