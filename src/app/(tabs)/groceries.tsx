@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Pressable } from 'react-native';
 import { styled } from 'styled-components/native';
 
+import { QuickAdd } from '@/components/groceries/QuickAdd';
 import { AppText, Card, Checkbox, EmptyState, Fab, Screen } from '@/components/ui';
 import { useGroceriesStore } from '@/store/groceries';
 import { theme } from '@/theme/theme';
@@ -117,7 +118,7 @@ export default function GroceriesScreen() {
 
   return (
     <Screen>
-      <Content showsVerticalScrollIndicator={false}>
+      <Content showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled">
         <Body>
           <HeaderRow>
             <HeaderText>
@@ -136,6 +137,8 @@ export default function GroceriesScreen() {
               </ClearButton>
             ) : null}
           </HeaderRow>
+
+          <QuickAdd />
 
           {isEmpty ? (
             <EmptyState
